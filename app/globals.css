@@ -2,26 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@keyframes moveIn {
+  from{translate: 0px -400px;}
+  to{translate: 0px 0px;}
+  
+}
+.animationMove{
+  animation: moveIn 0.5s ease-in-out ;
+}
+@keyframes moveOut {
+  from{translate: 0px 0px;}
+  to{translate: 0px -1000px;}
+  
+}
+.animationMoveOut{
+  animation: moveOut 0.5s ease-in ;
+}
+@font-face {
+  font-family: 'Nohemi';
+  src: url('../public/fonts/Nohemi-Regular.woff') format('woff'),
+       url('../public/fonts/Nohemi-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nohemi';
+  src: url('../public/fonts/Nohemi-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nohemi';
+  src: url('../public/fonts/Nohemi-Medium.ttf') format('ttf'),
+       url('../public/fonts/Nohemi-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@media screen and (max-width: 419px) {
+  .gridSize1 {
+    grid-template-columns:repeat(1, minmax(0, 1fr)); 
+  }
+  
 }
