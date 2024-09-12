@@ -56,8 +56,8 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "hero-pattern":"url('../public/images/slider1.svg')",  
-        'CTA':"url('../public/images/CTA.svg')",
-        // 'mCTA':"url('../public/images/mCTA.svg')",
+        'CTA':"url('../public/images/banner.svg')",
+        'mCTA':"url('../public/images/mCTA.svg')",
         'custom-gradient': 'linear-gradient(90deg, #1B7F75 100%, #4EA291 100%)',
       },
     },
