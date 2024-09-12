@@ -51,7 +51,7 @@ const Header = () => {
         <nav className="flex items-center justify-between 2xl:max-w-[1440px] 2xl:mx-auto  ">
           <div>
             <Link href="/">
-              <Image src={Logo} alt="StomaFlex Logo" />
+              <Image src={Logo} alt="Sentinel Packs Logo" />
             </Link>
           </div>
           <div className="hidden lg:flex items-center">
