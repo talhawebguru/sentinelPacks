@@ -6,8 +6,8 @@ import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 import RightArrow from "@/public/images/rightArrow.svg";
-import Product1 from "@/public/images/product5.jpg";
-import Product2 from "@/public/images/product7.jpg";
+import Product1 from "@/public/images/product5.png";
+import Product2 from "@/public/images/product7.png";
 import Product3 from "@/public/images/product8.jpg";
 import LeftSliderArrow from "@/public/images/leftSliderArrow.svg";
 import RightSliderArrow from "@/public/images/rightSliderArrow.svg";
@@ -63,7 +63,7 @@ const ProductOverview = () => {
                   Product Overview
                 </h3>
                 <h2 className="text-[#0e0e0e] text-[42px] xs:text-[28px] font-normal font-nohemi capitalize mt-3">
-                  Renal dialysis on off kit
+                  Universal Pack
                 </h2>
                 <p className="text-[#0e0e0e] text-base font-normal font-primary capitalize mt-5">
                   Safecare Medical Industries Was Conceived And Established In
@@ -100,7 +100,7 @@ const ProductOverview = () => {
                   Product Overview
                 </h3>
                 <h2 className="text-[#0e0e0e] text-[42px] xs:text-[28px] font-normal font-nohemi capitalize mt-3">
-                REFRACTIVE SURGERY PACK{" "}
+                Lithotomy Pack
                 </h2>
                 <p className="text-[#0e0e0e] text-base font-normal font-primary capitalize mt-5">
                   Safecare Medical Industries Was Conceived And Established In
