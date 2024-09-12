@@ -71,7 +71,7 @@ const Header = () => {
                 </li>
               </ul>
             </div>
-            <div className="px-[25px] py-3 bg-custom-gradient justify-center items-center gap-4 inline-flex text-white text-base font-medium font-primary">
+            <div className="px-[25px] py-3 cursor-pointer bg-custom-gradient justify-center items-center gap-4 inline-flex text-white text-base font-medium font-primary">
               Request for quote <Image src={RightArrow} alt="Right Arrow" />
             </div>
           </div>

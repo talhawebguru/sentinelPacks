@@ -22,7 +22,7 @@ const AboutUs = () => {
             SafeCare thrives on producing and providing quality medical products
             across the globe.
           </p>
-          <div className="px-[25px]  py-3 bg-custom-gradient justify-center mt-12 items-center gap-4 inline-flex text-white text-base font-medium font-primary">
+          <div className="px-[25px] cursor-pointer  py-3 bg-custom-gradient justify-center mt-12 items-center gap-4 inline-flex text-white text-base font-medium font-primary">
             Learn More <Image src={RightArrow} alt="Right Arrow" />
           </div>
         </div>

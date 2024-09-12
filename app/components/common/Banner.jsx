@@ -11,7 +11,7 @@ const Banner = () => {
         <div className='mt-20'>
             <h2 className=" text-white text-[42px] font-normal font-arial leading-[47.88px]">Enjoy up to 10% off!</h2>
             <p className='text-white text-base font-normal font-secondary leading-normal mt-4 lg:w-[400px]'>Grab your limited-time discount and enjoy 10% off on all our products</p>
-            <div className="px-[25px]  mb-5 py-3 mt-8  text-primary justify-center items-center gap-4 inline-flex bg-white text-base font-medium font-primary">
+            <div className="px-[25px] cursor-pointer  mb-5 py-3 mt-8  text-primary justify-center items-center gap-4 inline-flex bg-white text-base font-medium font-primary">
               Get this from Jurhy <Image src={RightArrow} alt="Right Arrow"  />
             </div>
         </div>

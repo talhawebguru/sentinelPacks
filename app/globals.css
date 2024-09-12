@@ -53,3 +53,15 @@
   }
   
 }
+/* Pagination colors slider for product overview home */
+
+.swiper-pagination-bullet {
+  background-color: #aca8a8 !important; 
+  height: 12px !important;
+  width: 12px !important;
+}
+
+/* Change pagination bullet active color */
+.swiper-pagination-bullet-active {
+  background-color: #208278 !important;
+}
