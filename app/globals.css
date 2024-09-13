@@ -65,3 +65,28 @@
 .swiper-pagination-bullet-active {
   background-color: #208278 !important;
 }
+
+
+.mySwiper2{
+  height: 100px;
+  width: 500px;
+  padding: 0 100px;
+  
+  margin-top: 40px;
+}
+.mySwiper2 .swiper-wrapper{
+  /* padding: 0 100px; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.mySwiper2 .swiper-slide {
+  background-color:#acacac;
+  opacity: 0.4;
+}
+.mySwiper2 .swiper-slide-thumb-active {
+  opacity: 1;
+  background-color: white;
+}
