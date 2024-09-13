@@ -1,11 +1,24 @@
 import React from "react";
 import ProductData from "../product/ProductData";
 import Link from "next/link";
+import * as motion from "framer-motion/client";
+
 
 const Product = () => {
   return (
     <>
-      <div className="bg-light-gray mt-28 xs:mt-1">
+      <motion.div 
+       initial={{ opacity: 0.3, scale: 0.5 }}
+       whileInView={{
+         opacity: 1,
+         scale: 1,
+         transition: {
+           opacity: { duration: 1, ease: "easeInOut" }, // Slow and smooth opacity transition
+           scale: { duration: 0.6, ease: "easeInOut" }, // Scale can be faster
+         },
+       }}
+       viewport={{ margin: "-100px" }}
+      className="bg-light-gray mt-28 xs:mt-1">
         <div className=" pt-36 xs:pt-20 pb-28 xl:px-[90px] lg:px-[40px] px-5 2xl:max-w-[1440px] 2xl:mx-auto 2xl:px-0">
           <div className="flex justify-between items-center">
             <h2 className="text-[#0e0e0e] text-[42px] xs:text-[28px] font-normal font-nohemi capitalize">
@@ -33,7 +46,7 @@ const Product = () => {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

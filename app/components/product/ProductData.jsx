@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import productData from "@/data/ProductList";
 import ratingStar from "@/public/images/ratingStar.svg";
+import { motion } from "framer-motion"
 
 
 const ProductData = ({
@@ -43,7 +44,17 @@ const ProductData = ({
   return (
     <>
         {displayedProducts.map((item, index) => (
-          <div
+          <motion.div
+          initial={{ opacity: 0.3, scale: 0.5 }}
+       whileInView={{
+         opacity: 1,
+         scale: 1,
+         transition: {
+           opacity: { duration: 1, ease: "easeInOut" }, // Slow and smooth opacity transition
+           scale: { duration: 0.6, ease: "easeInOut" }, // Scale can be faster
+         },
+       }}
+       viewport={{ margin: "-100px" }}
             className="bg-white shadow-xl   hover:shadow-2xl  flex flex-col  pb-4  justify-center px-5"
             key={index}
           >
@@ -73,7 +84,7 @@ const ProductData = ({
               </div>
             
             </div>
-          </div>
+          </motion.div>
         ))}
     </>
   );

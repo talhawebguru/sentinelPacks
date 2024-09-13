@@ -15,7 +15,7 @@ const ProductMainDetail = (props) => {
   return (
     <>
       <div className="xl:px-[90px]  2xl:max-w-[1440px] 2xl:mx-auto 2xl:px-0 lg:px-[40px] mt-10 px-5 flex flex-wrap md:flex-nowrap xl:gap-[90px] md:gap-10 overflow-hidden">
-        <div className="md:w-6/12 h-auto  sm:w-[60%] bg-white shadow md:mt-0 mt-10 mx-auto ">
+        <div className="md:w-6/12 h-auto  sm:w-[100%] w-[100%] bg-white shadow md:mt-0 mt-10 mx-auto ">
         <SliderProducts product={product.url} />
         </div>
         <div className="md:w-6/12 xs:overflow-hidden">

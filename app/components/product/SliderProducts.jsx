@@ -15,10 +15,7 @@ import "swiper/css/thumbs";
 import Image from "next/image";
 import Product1 from "@/public/images/product5.png";
 import Product2 from "@/public/images/product7.png";
-import Product3 from "@/public/images/product8.jpg";
 import { GoArrowLeft } from "react-icons/go";
-import LeftSliderArrow from "@/public/images/leftSliderArrow.svg";
-import RightSliderArrow from "@/public/images/rightSliderArrow.svg";
 const SliderProducts = (props) => {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const swiperRef = useRef(null);

@@ -51,6 +51,16 @@
   .gridSize1 {
     grid-template-columns:repeat(1, minmax(0, 1fr)); 
   }
+ 
+}
+
+@media screen and (max-width:550px){
+  .mySwiper2{
+    padding: 0;
+  }
+  .mySwiper2 .swiper-wrapper{
+    justify-content: left !important;
+  }
   
 }
 /* Pagination colors slider for product overview home */
@@ -71,11 +81,9 @@
   height: 100px;
   width: 500px;
   padding: 0 100px;
-  
   margin-top: 40px;
 }
 .mySwiper2 .swiper-wrapper{
-  /* padding: 0 100px; */
   width: 100%;
   display: flex;
   justify-content: center;

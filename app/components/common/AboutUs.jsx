@@ -2,11 +2,24 @@ import React from "react";
 import Image from "next/image";
 import RightArrow from "@/public/images/rightArrow.svg";
 import AboutUS from "@/public/images/aboutUs.svg";
+import * as motion from "framer-motion/client";
 
 const AboutUs = () => {
   return (
     <>
-      <div className="flex md:justify-between md:gap-5  flex-wrap md:flex-nowrap md:mt-32 mt-14 xs:mt-0   2xl:max-w-[1440px] 2xl:mx-auto xl:px-[90px] lg:px-[40px] px-5">
+      <motion.div
+        initial={{ opacity: 0.3, scale: 0.5 }}
+        whileInView={{
+          opacity: 1,
+          scale: 1,
+          transition: {
+            opacity: { duration: 1, ease: "easeInOut" }, // Slow and smooth opacity transition
+            scale: { duration: 0.6, ease: "easeInOut" }, // Scale can be faster
+          },
+        }}
+        viewport={{ margin: "-100px" }}
+        className="flex md:justify-between md:gap-5  flex-wrap md:flex-nowrap md:mt-32 mt-14 xs:mt-0   2xl:max-w-[1440px] 2xl:mx-auto xl:px-[90px] lg:px-[40px] px-5"
+      >
         <div className="md:w-[50%]">
           <h1 className="text-[#0e0e0e] text-[42px] font-normal font-nohemi capitalize mt-24 xs:mt-14 ">
             About Company
@@ -29,7 +42,7 @@ const AboutUs = () => {
         <div className="h-[590px] md:w-[50%] mt-10 xs:mt-6 xs:h-auto md:mt-0 flex justify-end">
           <Image src={AboutUS} alt="About Us" className="" />
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
