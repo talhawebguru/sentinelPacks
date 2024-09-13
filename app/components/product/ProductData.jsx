@@ -54,7 +54,7 @@ const ProductData = ({
            scale: { duration: 0.6, ease: "easeInOut" }, // Scale can be faster
          },
        }}
-       viewport={{ margin: "-100px" }}
+       viewport={{ margin: "-5%" }}
             className="bg-white shadow-xl   hover:shadow-2xl  flex flex-col  pb-4  justify-center px-5"
             key={index}
           >

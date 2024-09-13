@@ -17,7 +17,7 @@ const AboutUs = () => {
             scale: { duration: 0.6, ease: "easeInOut" }, // Scale can be faster
           },
         }}
-        viewport={{ margin: "-100px" }}
+        viewport={{ margin: "-7%" }}
         className="flex md:justify-between md:gap-5  flex-wrap md:flex-nowrap md:mt-32 mt-14 xs:mt-0   2xl:max-w-[1440px] 2xl:mx-auto xl:px-[90px] lg:px-[40px] px-5"
       >
         <div className="md:w-[50%]">
