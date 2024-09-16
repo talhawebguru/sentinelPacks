@@ -50,11 +50,11 @@ const ProductData = ({
          opacity: 1,
          scale: 1,
          transition: {
-           opacity: { duration: 1, ease: "easeInOut" }, // Slow and smooth opacity transition
+           opacity: { duration: 0.3, ease: "easeInOut" }, // Slow and smooth opacity transition
            scale: { duration: 0.6, ease: "easeInOut" }, // Scale can be faster
          },
        }}
-       viewport={{ margin: "-5%" }}
+       viewport={{ margin: "-10px" }}
             className="bg-white shadow-xl   hover:shadow-2xl  flex flex-col  pb-4  justify-center px-5"
             key={index}
           >
