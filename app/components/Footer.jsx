@@ -7,6 +7,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaYoutube } from "react-icons/fa";
+import * as motion from "framer-motion/client";
 
 
 
@@ -14,7 +15,12 @@ const Footer = () => {
   return (
     <>
       <div className=" xl:px-[90px] 2xl:px-0 lg:px-10 px-5 lg:mt-[100px] mt-8 bg-light-gray flex flex-col ">
-        <div className="">
+        <motion.div 
+        initial={{ opacity: 0, y: 70 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ margin: "-6%" }}
+        className="">
           <div className="grid lg:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 gap-10 lg:pt-[90px] pt-10  2xl:max-w-[1440px] 2xl:mx-auto">
             {/* Col1 */}
             <div>
@@ -94,7 +100,7 @@ const Footer = () => {
               </h3>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );
