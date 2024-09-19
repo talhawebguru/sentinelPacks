@@ -3,14 +3,11 @@ import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
-  Pagination,
-  Autoplay,
   Thumbs,
   FreeMode,
 } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
 import "swiper/css/thumbs";
 import Image from "next/image";
 import Product1 from "@/public/images/product5.png";

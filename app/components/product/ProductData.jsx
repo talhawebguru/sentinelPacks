@@ -40,34 +40,19 @@ const ProductData = ({ initialLimit, selectedCategory, mobileLimit }) => {
 
   // Card animation variants for Framer Motion
   const cardVariants = {
-    hidden: { opacity: 0, y: 160, scale: 0.7 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      transition: {
-        duration: 0.6,
-        ease: "easeInOut",
-      },
-    },
     hover: {
       scale: 1.05,
       boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.15)", // Elevates the card
-      transition: { duration: 0.3, ease: "easeInOut" },
+      transition: { duration: 0.2, ease: "easeInOut" },
     },
   };
 
   return (
     <>
       {displayedProducts.map((item, index) => (
-        <motion.div
+        <div
           key={index}
-          variants={cardVariants} // Apply animation to each card
-          initial="hidden"
-          whileInView="visible" // Apply the "visible" animation when the card is visible
-          whileHover="hover" // Hover effect for scaling and shadow
-          viewport={{ margin:"-1%" }}
-          className="bg-white shadow-xl hover:shadow-2xl flex flex-col pb-4 justify-center px-5 rounded-lg transition-all"
+          className="bg-white shadow-xl hover:shadow-2xl flex flex-col pb-4 justify-center px-5 rounded-lg transition-all duration-600 ease-in-out hover:scale-105"
         >
           {/* Link to the product detail page */}
           <Link href={`/product/${item.name.toLowerCase().replace(/ /g, "-")}`}>
@@ -80,9 +65,17 @@ const ProductData = ({ initialLimit, selectedCategory, mobileLimit }) => {
 
           {/* Product details */}
           <div className="p-4">
-            <h2 className="text-[#0e0e0e] text-base font-normal font-primary capitalize mt-4 h-12">
+            <motion.h2 
+            initial={{y:50, opacity:0}}
+            whileInView={{y:0, opacity:1}}
+            viewport={{once:true}}
+            transition={{
+              duration: 0.5,
+              ease: "easeInOut",
+            }}
+            className="text-[#0e0e0e] text-base font-normal font-primary capitalize mt-4 h-12">
               {item.name}
-            </h2>
+            </motion.h2>
 
             {/* Product rating */}
             <div className="mt-1">
@@ -101,7 +94,7 @@ const ProductData = ({ initialLimit, selectedCategory, mobileLimit }) => {
               </Link>
             </div>
           </div>
-        </motion.div>
+        </div>
       ))}
     </>
   );

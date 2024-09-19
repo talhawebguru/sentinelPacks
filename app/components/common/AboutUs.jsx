@@ -49,10 +49,10 @@ const AboutUs = () => {
 
         {/* Image Section */}
         <motion.div
-          initial={{ scale: 0.8, opacity: 0 }}
-          whileInView={{ scale: 1, opacity: 1 }}
+          initial={{ opacity:0, y:-25}}
+          whileInView={{ opacity: 1, y:0}}
           transition={{
-            duration: 0.9,
+            duration: 0.8,
             ease: "easeInOut",
             delay: 0.2,
             type: "spring",
