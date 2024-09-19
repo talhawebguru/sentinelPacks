@@ -31,6 +31,7 @@
        url('../public/fonts/Nohemi-Regular.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -38,6 +39,7 @@
   src: url('../public/fonts/Nohemi-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Nohemi';
@@ -45,6 +47,7 @@
        url('../public/fonts/Nohemi-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @media screen and (max-width: 419px) {

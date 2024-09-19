@@ -1,16 +1,27 @@
 import React from 'react'
 import Image from "next/image";
 import MissionImg from "@/public/images/missionImg.svg";
+import * as motion from "framer-motion/client";
+
 
 const Mission = () => {
   return (
     <>
     <div className="flex md:justify-between md:gap-5  flex-wrap md:flex-nowrap md:mt-28   2xl:max-w-[1440px] 2xl:mx-auto xl:px-[90px] lg:px-[40px] px-5">
       <div className="md:w-[50%]">
-        <h1 className="text-[#0e0e0e] text-[42px] font-normal font-nohemi capitalize mt-24 ">
+        <motion.h1
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeInOut", delay: 0.1 }}
+        viewport={{ once: false}}
+        className="text-[#0e0e0e] text-[42px] font-normal font-nohemi capitalize mt-24 ">
         Our Mission
-        </h1>
-        <p className="text-[#0e0e0e] text-base font-normal font-primary mt-5">
+        </motion.h1>
+        <motion.p
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, ease: "easeInOut", delay: 0.3 }}
+            viewport={{ once: false }} className="text-[#0e0e0e] text-base font-normal font-primary mt-5">
           Safecare Medical Industries Was Conceived And Established In The
           Year Of 2016 By Bin Ali Group That Plans To Give A Different
           Dimension To The Medical Industries All Across The Middle
@@ -20,12 +31,23 @@ const Mission = () => {
           and subsidiary offices across the UK, USA, Germany, and China,
           SafeCare thrives on producing and providing quality medical products
           across the globe.
-        </p>
+        </motion.p>
       
       </div>
-      <div className="h-[590px] md:w-[50%] mt-10 md:mt-0 flex justify-end">
+      <motion.div
+          initial={{ scale: 0.8, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{
+            duration: 0.9,
+            ease: "easeInOut",
+            delay: 0.2,
+            type: "spring",
+            stiffness: 100,
+          }}
+          viewport={{ margin:"-6%"}} 
+          className="h-[590px] md:w-[50%] mt-10 md:mt-0 flex justify-end">
         <Image src={MissionImg} alt="About Us" className="" />
-      </div>
+      </motion.div>
     </div>
   </>
   )

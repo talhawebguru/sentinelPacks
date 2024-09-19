@@ -4,7 +4,6 @@ import Image from "next/image";
 import HeroImage from "@/public/images/heroImg.svg";
 import MobileHeroImage from "@/public/images/mobileHeroImg.svg";
 import * as motion from "framer-motion/client"
-import { animate } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -27,7 +26,7 @@ const Hero = () => {
         <motion.div initial={{ x: 100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{duration: 0.5, ease: "easeInOut"}} className="w-full h-full mt-12 md:mt-0  xl:px-[90px] lg:px-[40px] 2xl:max-w-[1440px] 2xl:px-0 2xl:mx-auto px-5 2xl:rounded-2xl 2xl:shadow">
-            <Image src={HeroImage} alt="Hero Image" className="w-full h-full hidden md:block rounded-2xl shadow" />
+            <Image src={HeroImage} loading="eager" alt="Hero Image" className="w-full h-full hidden md:block rounded-2xl shadow" />
             <Image src={MobileHeroImage} alt="Hero Image" className="w-full h-full rounded-2xl shadow md:hidden" />
             
         </motion.div>
