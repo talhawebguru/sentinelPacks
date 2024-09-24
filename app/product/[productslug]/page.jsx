@@ -7,7 +7,7 @@ import BackButton from '@/app/components/product/BackButton';
 import ProductMainDetail from '@/app/components/product/ProductMainDetail';
 import RelatedProducts from '@/app/components/product/RelatedProducts';
 import Popup from '@/app/components/product/Popup';
-import PageBannerImg from '@/public/images/productBannerImg.svg';
+import PageBannerImg from '@/public/images/SingleBannerImg.svg';
 
 
 
