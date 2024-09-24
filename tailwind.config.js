@@ -22,6 +22,11 @@ module.exports = {
       'light-black':"#1E1E1E",
       'pink':"#9E1F66",
       'copyRight':"#9F9F9F",
+      teal: {
+        600: '#1B7F75',
+        500: '#4EA291'
+      },
+
 
     },
     fontFamily: {
@@ -53,6 +58,7 @@ module.exports = {
         },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        'gradient-to-r-teal': 'linear-gradient(to right, #1B7F75 0%, #4EA291 100%)',
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "hero-pattern":"url('../public/images/slider1.svg')",  

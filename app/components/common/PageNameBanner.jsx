@@ -6,21 +6,15 @@ import * as motion from "framer-motion/client";
 const PageNameBanner = (props) => {
   return (
     <>
-      <motion.div
-        initial={{ opacity: 0, x: 150 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{
-          duration: 0.8,
-          ease: "easeInOut",
-        }}
-        className=" 2xl:max-w-[1440px] 2xl:mx-auto xl:mx-[90px] lg:mx-10 h-[279px] lg:mt-11 mt-6 relative z-30 xs:overflow-hidden xs:mt-5"
+      <div
+        className=" 2xl:max-w-[1440px] bg-gradient-to-r-teal  2xl:mx-auto xl:mx-[90px] lg:mx-10 h-[279px] lg:mt-11 mt-6 relative z-30 xs:overflow-hidden xs:mt-5"
       >
-        <Image
+        {/* <Image
           src={props.image}
           alt="banner"
           className="absolute -z-0 w-full h-full object-cover object-left-top inset-0"
           priority
-        />
+        /> */}
 
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
@@ -44,7 +38,7 @@ const PageNameBanner = (props) => {
         >
           Grab your limited-time discount and enjoy 10% off on all our products
         </motion.p>
-      </motion.div>
+      </div>
     </>
   );
 };
