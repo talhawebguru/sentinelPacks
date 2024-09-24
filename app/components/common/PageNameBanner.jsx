@@ -45,7 +45,7 @@ const PageNameBanner = (props) => {
             animate="visible"
             transition={{ duration: 1.2, ease: "easeInOut", delay: 0.2 }}
             variants={imageVariant}
-            className="absolute -z-30 top-0 left-[32%]"
+            className="absolute hidden md:block -z-30 top-0 left-[32%]"
           >
             <Image src={Ellipse3} alt="Circle" loading="eager" priority />
           </motion.div>
@@ -55,7 +55,7 @@ const PageNameBanner = (props) => {
             animate="visible"
             transition={{ duration: 1.2, ease: "easeInOut", delay: 0.3 }}
             variants={imageVariant}
-            className="absolute  top-0 right-0"
+            className="absolute hidden md:block  top-0 right-0"
           >
             <Image src={Ellipse4} alt="Circle" loading="eager" priority />
           </motion.div>
@@ -69,7 +69,7 @@ const PageNameBanner = (props) => {
              repeat: Infinity, // Repeat the motion infinitely
              repeatType: "mirror", // Makes the motion go back and forth
            }}
-            className="absolute -z-40 top-0 bottom-0 right-0"
+            className="absolute hidden md:block  -z-40 top-0 bottom-0 right-0"
           >
             <Image src={Ellipse5} alt="Circle" loading="eager" priority />
           </motion.div>
@@ -80,7 +80,7 @@ const PageNameBanner = (props) => {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, ease: "easeInOut" }}
-          className="absolute bottom-0 right-4"
+          className="absolute hidden md:block bottom-0 right-4"
         >
           <Image
             src={props.image}
@@ -97,7 +97,7 @@ const PageNameBanner = (props) => {
             duration: 1.0,
             ease: "easeInOut",
           }}
-          className="text-white text-[42px] xs:text-[32px] font-normal font-nohemi absolute bottom-28 left-9 "
+          className="text-white text-[42px] xs:text-[32px] font-normal font-nohemi absolute bottom-28 left-9 xs:bottom-36 "
         >
           {props.title}
         </motion.h2>
@@ -109,7 +109,7 @@ const PageNameBanner = (props) => {
             duration: 1.2,
             ease: "easeInOut",
           }}
-          className="text-white text-base font-normal font-primary leading-normal absolute bottom-16 left-9 xl:w-[29%]"
+          className="text-white xs:w-[80%] text-base font-normal font-primary leading-normal absolute bottom-16 left-9 xl:w-[29%]"
         >
           Grab your limited-time discount and enjoy 10% off on all our products
         </motion.p>

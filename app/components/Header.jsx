@@ -89,8 +89,8 @@ const Header = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <div
-            className={`lg:hidden absolute left-0 w-full z-20 bg-white flex items-center flex-col   transition-all duration-700 ease-in-out  ${
-              isAnimatingOut ? "animationMoveOut " : "animationMove h-[86vh]"
+            className={`lg:hidden absolute left-0 w-full z-50 bg-white flex items-center flex-col   transition-all duration-700 ease-in-out  ${
+              isAnimatingOut ? "animationMoveOut " : "animationMove h-[100vh]"
             }`}
           >
             <ul className="flex items-center w-full flex-col gap-8 pt-4 text-black text-base font-normal font-secondary leading-tight">
